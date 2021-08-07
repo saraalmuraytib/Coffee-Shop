@@ -134,7 +134,7 @@ def verify_decode_jwt(token):
                 rsa_key,
                 algorithms=ALGORITHMS,
                 audience=API_AUDIENCE,
-                issuer='https://' + AUTH0_DOMAIN + '/'
+                issuer='http://' + AUTH0_DOMAIN + '/'
             )
 
             return payload
